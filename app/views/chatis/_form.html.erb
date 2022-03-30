@@ -1,0 +1,27 @@
+<%= form_for(chati) do |f| %>
+  <% if chati.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(chati.errors.count, "error") %> prohibited this chati from being saved:</h2>
+
+      <ul>
+      <% chati.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :application_id %>
+    <%= f.text_field :application_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

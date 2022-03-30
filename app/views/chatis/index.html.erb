@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Chatis</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @chatis.each do |chati| %>
+      <tr>
+        <td><%= chati.name %></td>
+        <td><%= link_to 'Show', getChat_path(params["token"],chati) %></td>
+        <td><%= link_to 'Edit', updateChat_path(params["token"],chati) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Chati', createChat_path(params["token"]) %>

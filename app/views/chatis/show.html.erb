@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @chati.name %>
+</p>
+
+
+<div id="messages">
+  <%= render @messages %>
+</div>
+
+<form>
+  <label>Say something:</label><br>
+  <input type="text" data-behavior="room_speaker" id = <%= @chati.id %>>
+</form>
+
