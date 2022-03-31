@@ -3,6 +3,13 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
+## Prerequisite
+
+#### 1- ruby -v 2.6.9
+#### 2- rails -v 5.2.7
+#### 3- mysql -v 8
+#### 4- Nodejs
+
 # steps to run the app:
 
 ### 1- docker-compose up
