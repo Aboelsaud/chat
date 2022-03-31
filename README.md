@@ -8,6 +8,8 @@ application up and running.
 ### 1- docker-compose up
 ### 2- docker-compose run app rake db:migrate
 
+### then type localhost:3001/api/applications and an index page will appear.
+
 # endpoints
 
 ## applications
